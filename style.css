@@ -1,0 +1,40 @@
+/* style.css */
+
+.foldericon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foldericon a {
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    color: rgb(131, 68, 126);
+}
+
+.foldericon a:hover {
+    color: rgb(105, 64, 133);
+}
+
+.foldericon img {
+    width: 100px; 
+    height: 100px; 
+}
+
+.foldericon h1 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .foldericon img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .foldericon h1 {
+        font-size: 14px;
+    }
+}
