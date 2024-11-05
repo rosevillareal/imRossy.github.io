@@ -1,74 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-  background-color: #ffa4f3;
-  padding: 20px;
-  font-family: Arial;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8e0f4;
+            color: #4a4a4a;
+            line-height: 1.6;
+            padding: 40px 0;
+        }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
+        /* Center the content */
+        .main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #d16ed5;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-/* Content */
-.content {
-  background-color: rgb(231, 129, 214);
-  padding: 10px;
-}
+        hr {
+            border: 0;
+            border-top: 3px solid #d16ed5;
+            margin-bottom: 30px;
+        }
 
-/* Navigation */
-nav {
-  text-align: right;
-  margin-bottom: 20px;
-}
+        .container {
+            background-color: #f5d0f7;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
 
-nav a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #d86dd8;
-  color: #774479;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
 
-nav a:hover {
-  background-color: #8d5085;
-}
+        nav a {
+            padding: 12px 20px;
+            background-color: #d16ed5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-</style>
+        nav a:hover {
+            background-color: #8e4b8e;
+            transform: scale(1.05);
+        }
+
+        nav a:active {
+            transform: scale(1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .main {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- MAIN (Center website) -->
+<!-- MAIN CONTENT -->
 <div class="main">
 
-<h1>MY Portfolio</h1>
-<hr>
-<div class="container">
-  <nav>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-  </nav>
-<!-- Portfolio content goes here -->
+    <h1>MY Portfolio</h1>
+    <hr>
+    <div class="container">
+        <nav>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- Portfolio content goes here -->
+        <p class="content-description">Welcome to my portfolio! Here, you can explore my work, learn more about me, and get in touch if you're interested in collaborating. Stay tuned for more updates!</p>
+    </div>
 
-</div>
 </div>
 
 </body>
-</html> 
+</html>
